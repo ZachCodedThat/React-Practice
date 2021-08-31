@@ -1,9 +1,15 @@
 import React, { forwardRef } from "react";
+import styles from "@styles/Home.module.css";
 
 const FRInputs = forwardRef((props, ref) => {
   return (
     <div>
-      <input type="text" ref={ref} placeholder="forward ref example" />
+      <input
+        className={styles.input}
+        type="text"
+        ref={ref}
+        placeholder="Child component"
+      />
     </div>
   );
 });

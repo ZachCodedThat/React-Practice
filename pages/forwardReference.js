@@ -8,6 +8,10 @@ export default function forwardReferenceExample() {
       <Navbar />
       <div className={styles.container}>
         <FRParentInput />
+        <p className={styles.explination}>
+          notice the button produced by the Parent component focuses the cursor
+          to the input box made by the child component.
+        </p>
       </div>
     </>
   );

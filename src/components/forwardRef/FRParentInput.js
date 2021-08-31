@@ -1,5 +1,6 @@
 import React, { createRef } from "react";
 import FRInputs from "./FRInputs";
+import styles from "@styles/Home.module.css";
 
 const FRParentInput = () => {
   const inputRef = createRef();
@@ -9,9 +10,11 @@ const FRParentInput = () => {
   };
 
   return (
-    <div>
+    <div className={styles.insideContainer}>
       <FRInputs ref={inputRef} />
-      <button onClick={clickHandler}>Focus input</button>
+      <button className={styles.innerButton} onClick={clickHandler}>
+        Focus input
+      </button>
     </div>
   );
 };
