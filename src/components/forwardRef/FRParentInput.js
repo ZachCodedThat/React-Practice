@@ -2,7 +2,7 @@ import React, { createRef } from "react";
 import FRInputs from "./FRInputs";
 import styles from "@styles/Home.module.css";
 
-const FRParentInput = () => {
+export default function FRParentInput() {
   const inputRef = createRef();
 
   const clickHandler = () => {
@@ -17,6 +17,4 @@ const FRParentInput = () => {
       </button>
     </div>
   );
-};
-
-export default FRParentInput;
+}
