@@ -7,8 +7,8 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <>
-      <div className={styles.container}>
+    <div className={styles.homeContainer}>
+      <div className={styles.homeContainer}>
         <button
           className={styles.button}
           type="button"
@@ -17,7 +17,7 @@ export default function Home() {
           Reference example
         </button>
       </div>
-      <div className={styles.container}>
+      <div className={styles.homeContainer}>
         <button
           className={styles.button}
           type="button"
@@ -26,6 +26,15 @@ export default function Home() {
           forwardReference example
         </button>
       </div>
-    </>
+      <div className={styles.homeContainer}>
+        <button
+          className={styles.button}
+          type="button"
+          onClick={() => router.push("/useToggle")}
+        >
+          useToggle example
+        </button>
+      </div>
+    </div>
   );
 }

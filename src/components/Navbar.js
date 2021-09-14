@@ -8,7 +8,7 @@ export default function Navbar() {
     <header>
       <div className={styles.navbar}>
         <button
-          className={styles.button}
+          className={styles.navButton}
           type="button"
           onClick={() => router.push("/")}
         >
