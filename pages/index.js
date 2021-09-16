@@ -35,6 +35,15 @@ export default function Home() {
           useToggle example
         </button>
       </div>
+      <div className={styles.homeContainer}>
+        <button
+          className={styles.button}
+          type="button"
+          onClick={() => router.push("/useTimeout")}
+        >
+          useTimeout example
+        </button>
+      </div>
     </div>
   );
 }
